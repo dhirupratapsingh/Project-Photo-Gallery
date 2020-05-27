@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script src="jquery/node_modules/jquery/dist/jquery.js"></script>
+    <script src="jquery/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+
+    <script src="javaScript/commonJS.js"></script>
+    <script src="javaScript/imgGrid.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/indexPage.css">
+
+    <link rel="stylesheet" href="css/imageModalAndOverlay.css">
+    <style>
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar_style">
+       
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <a href="index.html" class="navbar-brand">PhotoHub</a>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Images.html" class="nav-link">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="illustrations.html" class="nav-link">Illustrations</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="photographers.html" class="dropdown-item">Photographers</a>
+                        <a href="#" class="dropdown-item">Popular Photos</a>
+                    </div>
+
+                </li>
+                <li class="nav-item ">
+                    <!-- Convert it to button -->
+                    <button class="login_btn">Login</button>
+
+                </li>
+                
+                        
+                    
+            </ul>
+        </div>
+        <button class="sidebar_btn sidenav_trigger">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+
+<!-- ==================================================================================== -->
+<!-- Sidebar Contents -->
+<div class="sidenav_container">
+    <div class="sidenav">
+        <button class="sidenav_close">&times;</button>
+        <div class="sidenav_contents">
+            <a href="index.html">Home </a>
+            <a href="Images.html">Photos </a>
+            <a href="photographers.html">Photographers </a>
+
+            <a href="about.html">About Us </a>
+            <a href="contact.html">Contact Us </a>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ================================================================================ -->
+            <!-- LOGIN -->
+            <div class="loginModal">
+                    <button class="loginModalCloseBtn">&times;</button>
+                    <div class="loginModal_content">
+                        <div class="loginModal_row">
+                            <div class="loginModal_col" id="mainImage">
+                                
+                            </div>
+                            <div class="loginModal_col" id="loginModal_Content">
+                                <h5>LOGIN</h5>
+                                <form action="">
+                                    <div class="form-group">
+                                       <!-- <label for="">EMAIL ADDRESS</label> -->
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your e-mail" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                    <!-- <label for="">PASSWORD</label> -->
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label for=" " class="form-check-label"> Remember Me </label> 
+                                    </div>
+                                    <button class="btn btn-block" style="background-color:chartreuse">Login</button>
+                             </form>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+<!-- ========================================================================== -->
+    <!-- Hero image -->
+
+
+<!-- ========================================================= -->
+<!-- -----------------SearchBar----------------- -->
+<div class="hero_container">
+    <div class="hero-image">
+        <div class="parallax-img"></div>
+    </div>
+    
+    <div class="search_container">
+        <div class="hero_tag">Collection of amazing photos </div>
+        A place where photographers and photoseekers meet
+        <br>
+        <input type="text" class="search_input" placeholder="Search...">
+        <button class="search_btn"><i class="material-icons">
+            search
+            </i></button>
+
+    </div>
+</div>
+
+
+<!-- ===================================================================== -->
+    <!-- OptionCArds -->
+
+<div class="option-cards container-fluid row" >
+    <div class="col-lg-2 col-md-3 col-4">
+        <a href="nature.html">
+            <div class="card opt-card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM34w49GPWZCPH_InYG35Sdruhc5k_9emPIshAJLStitfGePyg&s" alt="" class="card-img-top">
+                <div class="card-body">
+                        <h5 class="card-title">Nature</h5>
+                </div>
+            </div>
+    
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-4">
+        <a href="bikes.html">
+            <div class="card opt-card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTONQUC2LyQXpbsah6Vpaf65PbCIgmxppUOM1N8_NM4MWronzFIyg&s" alt="" class="card-img-top">
+                <div class="card-body">
+                        <h5 class="card-title">Bikes</h5>
+                </div>
+            </div>
+    
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-4">
+        <a href="people.html">
+            <div class="card opt-card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUC-IoEKoeTg6XhcYsZdCN1gsJh4v2uxjHblKxidY7gXqqvf-U&s" alt="" class="card-img-top">
+                <div class="card-body">
+                        <h5 class="card-title">People</h5>
+                </div>
+            </div>
+    
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-4">
+        <a href="abstract.html">
+            <div class="card opt-card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2qobaP2zCJCwDjpWLYXKbtta4cwdfp00ZAPzCPMhZKc0CigFCvg&s" alt="" class="card-img-top">
+                <div class="card-body">
+                        <h5 class="card-title">Abstract</h5>
+                </div>
+            </div>
+    
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-4">
+        <a href="cars.html">
+            <div class="card opt-card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUajTMUB7u0JNudCnMS5Axcdvew9lVDz0kw5OeJIGV1BgPLjGE&ss" alt="" class="card-img-top">
+                <div class="card-body">
+                        <h5 class="card-title">Cars</h5>
+                </div>
+            </div>
+    
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-4">
+        <a href="animals.html">
+            <div class="card opt-card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1YKoNTNnYioZoz39q45wbXfeB9kpzHy_9ex6KlzxPsDoJT6qsQ&s" alt="" class="card-img-top">
+                <div class="card-body">
+                        <h5 class="card-title">Animals</h5>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<!-- =================================================================================== -->
+                <!-- IMAGES -->
+<hr>
+
+<h3 class="font-white">Trending Photos</h3>
+
+    <div class="imgGrid-row" id="imagesSection">
+        <div class="imgGrid-column-3">
+
+        </div>
+        <div class="imgGrid-column-3">
+            
+        </div>
+        <div class="imgGrid-column-3">
+            
+        </div>
+        
+    </div>
+
+
+<div class="modalImageContainer" id="mod">
+        <!-- <span class="closeBtn">&times;</span> -->
+        <button class="modalImagecloseBtn">&times;</button>
+        <div class="modalImageView">
+            <img src="" alt="" class="modalImage" id="modalImageHero">
+        </div>
+
+</div>
+
+
+
+
+</body>
+</html>
